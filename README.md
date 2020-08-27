@@ -1,5 +1,5 @@
 # 📅 Meeting board 📅
-## [DEMO]()
+## [DEMO](https://meetings-board.netlify.app/)
 
 ## What this project is about
 This is my own attempt at the Progress' task. The goal of this task is to create pure CSS layout for a screen. The app should include the following features:
