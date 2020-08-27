@@ -16,12 +16,12 @@ This is my own attempt at the Progress' task. The goal of this task is to create
 
 Clone the repository.
 ```
-$ git clone git@github.com:vanyadelova/accordion-KendoUI-widget.git
+$ git clone git@github.com:vanyadelova/meeting-board-layout.git
 ```
 Start the app.
 
 ```
-cd accordion-KendoUI-widget
+cd meeting-board-layout
 firefox index.html || chrome index.html
 ```
 
