@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Appointments</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Modify the Background Image -->
+    <img
+      class="bg cover z"
+      src="https://meetingroom365.com/customimage/images/5aeb51759b103.png"
+    />
+
+    <!-- Do not modify HTML -->
+    <div class="left-bg"></div>
+
+    <div class="meetings in">
+      <div class="meeting z passed" data-st="Sep 10 2016" data-et="Sep 10 2016">
+        <h3>11:00am – 12:30pm</h3>
+        <h2>Demo Meeting</h2>
+        <h4>Bob Thompson and 3 others</h4>
+        <input class="btn" type="button" value="JOIN" />
+      </div>
+
+      <div class="meeting z current empty">
+        <h3>NOW</h3>
+        <h2 class="available">ROOM AVAILABLE</h2>
+        <h4>TAP HERE TO RESERVE FOR 15 MINUTES</h4>
+        <input class="btn" type="button" value="JOIN" />
+      </div>
+
+      <div class="meeting z current">
+        <h3>1:00pm – 1:30pm</h3>
+        <h2 class="available">Weekly status meeting</h2>
+        <h4>John Pohl and 2 others</h4>
+
+        <input class="btn" type="button" value="JOIN" />
+      </div>
+
+      <div class="meeting z">
+        <h3>2:00pm – 2:30pm</h3>
+        <h2>Sprint review</h2>
+        <h4>Josh Thompson and 1 other</h4>
+        <input class="btn" type="button" value="JOIN" />
+      </div>
+
+      <div class="meeting z">
+        <h3>3:00pm – 3:30pm</h3>
+        <h2>Customer user study report out</h2>
+        <h4>Josh Thompson and 1 other</h4>
+        <input class="btn" type="button" value="JOIN" />
+      </div>
+    </div>
+
+    <div class="top right">
+      <h1>Meetings</h1>
+      <h2 class="available">•&nbsp;AVAILABLE</h2>
+      <h2 class="occupied">•&nbsp;OCCUPIED</h2>
+    </div>
+
+    <div class="middle">
+      <div class="inline-block">
+        <img src="meeting.jpg" width="100" height="100" />
+        <h3>New Meeting</h3>
+      </div>
+
+      <div class="inline-block">
+        <img src="dial.png" width="100" height="100" />
+        <h3>Dial Pad</h3>
+      </div>
+      <br />
+      <br />
+      <div class="inline-block">
+        <img src="share.png" width="100" height="100" />
+        <h3>Present Now</h3>
+      </div>
+      <div class="inline-block">
+        <img src="people.png" width="100" height="100" />
+        <h3>Add People</h3>
+      </div>
+    </div>
+
+    <div class="bottom right">
+      <h1>Friday, August 28, 2020</h1>
+      <h2>12:05 PM</h2>
+      <div id="controls">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 50 50"
+          id="playpause"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="40"
+          height="40"
+          style="margin-top: 0.6rem"
+        >
+          <polygon points="12,0 25,11.5 25,39 12,50" id="leftbar" />
+          <polygon
+            points="25,11.5 39.7,24.5 41.5,26 39.7,27.4 25,39"
+            id="rightbar"
+          />
+          <animate
+            to="7,3 19,3 19,47 7,47"
+            id="lefttopause"
+            xlink:href="#leftbar"
+            attributeName="points"
+            dur=".3s"
+            begin="indefinite"
+            fill="freeze"
+          />
+          <animate
+            to="12,0 25,11.5 25,39 12,50"
+            id="lefttoplay"
+            xlink:href="#leftbar"
+            attributeName="points"
+            dur=".3s"
+            begin="indefinite"
+            fill="freeze"
+          />
+          <animate
+            to="31,3 43,3 43,26 43,47 31,47"
+            id="righttopause"
+            xlink:href="#rightbar"
+            attributeName="points"
+            dur=".3s"
+            begin="indefinite"
+            fill="freeze"
+          />
+          <animate
+            to="25,11.5 39.7,24.5 41.5,26 39.7,27.4 25,39"
+            id="righttoplay"
+            xlink:href="#rightbar"
+            attributeName="points"
+            dur=".3s"
+            begin="indefinite"
+            fill="freeze"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 63 63"
+          width="63"
+          height="63"
+        >
+          <path
+            d="M35.7,31.7c0-5.1-0.9-9.2-2-9.8L33.6,11c0-1.2-1.4-1.7-2.2-1L17.6,22H7.3C5.6,22,4,23.3,4,24.9v13.6 C4,40.2,5.6,41,7.3,41h10.3l14.1,12.3c0.9,0.8,2.2,0.3,2.2-0.9l-0.1-11.1C34.8,40.6,35.7,36.6,35.7,31.7z"
+            id="audio-speaker"
+          />
+          <path
+            fill="none"
+            stroke="#000"
+            stroke-width="5"
+            stroke-linecap="round"
+            d="M42,19.4 c5.1,8.6,4.5,18.6,0,24.2"
+            id="audio-med"
+          />
+          <path
+            fill="none"
+            stroke="#000"
+            stroke-width="5"
+            stroke-linecap="round"
+            d="M50.6,16.3 c7.8,10.1,7.3,21.1,0.4,31"
+            id="audio-loud"
+          />
+        </svg>
+
+        <input
+          type="range"
+          min="0"
+          max="1"
+          step=".01"
+          value="1"
+          id="vol-control"
+          list="volsettings"
+        />
+        <datalist id="volsettings">
+          <option>0</option>
+          <option>0.2</option>
+          <option>0.4</option>
+          <option>0/6</option>
+          <option>0.8</option>
+          <option>1</option>
+        </datalist>
+      </div>
+    </div>
+    <!-- Do not modify HTML -->
+  </body>
+</html>
